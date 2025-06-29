@@ -18,6 +18,7 @@ Traditional disease identification relies heavily on expert observation, which i
 
 **🧠 Detected Diseases**
 
+
 🦠 Bacterial Canker
 
 🐛 Gall Midge
