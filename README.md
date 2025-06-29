@@ -6,9 +6,13 @@ Mango is a high-value agricultural commodity, especially in tropical countries l
 Traditional disease identification relies heavily on expert observation, which is time-consuming, subjective, and not always accessible in rural areas. To address this issue, a deep learning-based solution using Computer Vision and CNN models was developed to provide efficient and accurate detection of mango leaf diseases. The model is trained using the MangoLeafBD dataset available on Kaggle.
 
 **📸 Application Features**
+
 📤 Upload mango leaf images directly from the browser
+
 🧠 Automatically predicts the type of disease using CNN
+
 💡 Provides recommended treatment based on prediction
+
 🖥️ Clean, responsive, and user-friendly interface
 
 **🧠 Detected Diseases**
