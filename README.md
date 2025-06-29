@@ -113,9 +113,10 @@ Conventional disease diagnosis relies on expert observation, which is time-consu
 ---
 
 🔗 Useful Links
-📦 Dataset: MangoLeafBD on Kaggle
 
-📓 Model Training Notebook: Google Colab
+-📦 Dataset: MangoLeafBD on Kaggle
+
+-📓 Model Training Notebook: Google Colab
 
 📚 Project Info
 
