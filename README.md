@@ -118,12 +118,19 @@ Conventional disease diagnosis relies on expert observation, which is time-consu
 📓 Model Training Notebook: Google Colab
 
 📚 Project Info
+
 Name: Putri Amanda Sari
+
 Class: 4 TI A
+
 Course: Computer Vision
+
 Lecturer: Ananda, S.Kom., M.T., Ph.D.
+
 Lab Assistant: Mhd. Anwar, S.Tr. Kom.
+
 Institution: Politeknik Caltex Riau
+
 Year: 2025
 
 
