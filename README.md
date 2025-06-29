@@ -1,93 +1,134 @@
-**🍃 Mango Leaf Disease Detection**
-This system automatically detects diseases on mango leaves using a Convolutional Neural Network (CNN) and provides treatment solutions based on the prediction results. The web-based application features a simple and responsive interface, allowing users to upload mango leaf images and receive instant diagnosis and solutions.
+# 🍃 Mango Leaf Disease Detection
 
-**📖 Background**
-Mango is a high-value agricultural commodity, especially in tropical countries like Indonesia. However, mango production is often disrupted by leaf diseases such as bacterial canker, gall midge, and sooty mould, which can significantly reduce both yield quality and quantity.
-Traditional disease identification relies heavily on expert observation, which is time-consuming, subjective, and not always accessible in rural areas. To address this issue, a deep learning-based solution using Computer Vision and CNN models was developed to provide efficient and accurate detection of mango leaf diseases. The model is trained using the MangoLeafBD dataset available on Kaggle.
+An intelligent system that automatically detects diseases in mango leaves using a **Convolutional Neural Network (CNN)** and provides treatment suggestions based on prediction results. This web-based application features a clean and responsive interface that allows users to upload mango leaf images and get instant diagnostic feedback.
 
-**📸 Application Features**
+---
 
-📤 Upload mango leaf images directly from the browser
+## 📖 Background
 
-🧠 Automatically predicts the type of disease using CNN
+Mango is a high-value agricultural commodity, especially in tropical countries like Indonesia. Unfortunately, mango production is often hindered by various leaf diseases, such as *bacterial canker*, *gall midge*, and *sooty mould*, which can reduce both the quality and quantity of yields.
 
-💡 Provides recommended treatment based on prediction
+Conventional disease diagnosis relies on expert observation, which is time-consuming and not always available in remote areas. This project leverages **deep learning** and **computer vision** techniques using a **CNN model** trained on the **MangoLeafBD** dataset to accurately and efficiently classify leaf diseases.
 
-🖥️ Clean, responsive, and user-friendly interface
+---
 
+## 📸 Features
 
-**🧠 Detected Diseases**
+- 📤 Upload mango leaf images directly via the browser  
+- 🤖 Automatically predict the disease using a trained CNN model  
+- 💊 Show suggested treatment based on prediction results  
+- 🖥️ Clean and responsive web interface  
 
+---
 
-🦠 Bacterial Canker
+## 🧠 Detected Diseases
 
-🐛 Gall Midge
+- 🦠 **Bacterial Canker**
+- 🐛 **Gall Midge**
+- 🍄 **Sooty Mould**
+- 🌿 **Healthy (No Disease)**
 
-🍄 Sooty Mould
+---
 
-🌿 Healthy (No Disease)
+## 🛠️ Technologies Used
 
-**🛠️ Technologies Used**
+| Technology         | Description                                     |
+|--------------------|-------------------------------------------------|
+| Python             | Core programming language                       |
+| TensorFlow / Keras | Building and training the CNN model             |
+| Flask              | Backend web framework                                                    |
+| HTML + CSS         | Frontend web design                             |
+| Jinja2             | HTML templating                                 |
+| Google Colab       | Model development and training environment      |
 
-Python : Main programming language
+---
+---
 
-TensorFlow / Keras : Building and training the CNN model
+## 🧪 Workflow Overview
 
-Flask	: Backend framework for the web application
+1. **Dataset Collection**  
+   Dataset: [MangoLeafBD (Kaggle)](https://www.kaggle.com/datasets/warcoder/mango-leaf-disease-dataset)
 
-HTML + CSS : User interface styling
+2. **Data Preprocessing**  
+   - Resize all images to 150x150 pixels  
+   - Apply data augmentation (rotation, flip, zoom)
 
-Jinja2 : HTML templating engine
+3. **Model Building**  
+   - CNN with Conv2D, MaxPooling, Flatten, Dense, Dropout, and Softmax
 
-Google Colab : Cloud-based training environment
+4. **Model Training**  
+   - 10 training epochs  
+   - 80% training, 20% validation split
 
-**🧪 Processing Workflow**
+5. **Model Saving & Prediction**  
+   - Save trained model to `.h5`  
+   - Load model for web-based predictions  
+   - Display results and suggested treatments to users
 
-**1. Dataset Collection**
+---
 
-Dataset used: MangoLeafBD
+## 💡 Disease Treatment Suggestions
 
-Contains 4 classes: Healthy, Gall Midge, Sooty Mould, Bacterial Canker
+| Disease           | Suggested Treatment                                  |
+|-------------------|------------------------------------------------------|
+| Bacterial Canker  | Prune infected parts and spray with bactericide      |
+| Gall Midge        | Trim affected leaves and apply insecticide           |
+| Sooty Mould       | Clean with soapy water and apply fungicide           |
+| Healthy           | No treatment needed                                  |
 
-**2.Image Preprocessing**
+---
 
-All images are resized to 150x150 px. Image augmentation (rotation, flipping) is applied to enhance generalization.
+## 🧪 Workflow Overview
 
-**3.Building the CNN Model**
+1. **Dataset Collection**  
+   Dataset: [MangoLeafBD (Kaggle)](https://www.kaggle.com/datasets/warcoder/mango-leaf-disease-dataset)
 
-The model uses three Conv2D + MaxPooling2D layers to extract features, followed by Flatten and Dense layers. A dropout layer is used to prevent overfitting. The final Softmax layer outputs the prediction.
+2. **Data Preprocessing**  
+   - Resize all images to 150x150 pixels  
+   - Apply data augmentation (rotation, flip, zoom)
 
-**4.Training and Validation**
+3. **Model Building**  
+   - CNN with Conv2D, MaxPooling, Flatten, Dense, Dropout, and Softmax
 
-Model is trained for 10 epochs using an 80/20 train-validation split.
+4. **Model Training**  
+   - 10 training epochs  
+   - 80% training, 20% validation split
 
-**5.Model Saving**
+5. **Model Saving & Prediction**  
+   - Save trained model to `.h5`  
+   - Load model for web-based predictions  
+   - Display results and suggested treatments to users
 
-After training, the model is saved in .h5 format.
+---
 
-**6.Prediction and Recommendation**
+## 💡 Disease Treatment Suggestions
 
-Users can upload a leaf image via the web app, and the model will classify the disease and suggest an appropriate treatment.
+| Disease           | Suggested Treatment                                  |
+|-------------------|------------------------------------------------------|
+| Bacterial Canker  | Prune infected parts and spray with bactericide      |
+| Gall Midge        | Trim affected leaves and apply insecticide           |
+| Sooty Mould       | Clean with soapy water and apply fungicide           |
+| Healthy           | No treatment needed                                  |
 
-**🔗 Useful Links**
+---
 
+🔗 Useful Links
 📦 Dataset: MangoLeafBD on Kaggle
 
-📓 Google Colab Notebook: Open Notebook
+📓 Model Training Notebook: Google Colab
 
-📚 About the Project
-
-**Name: Putri Amanda Sari
-
+📚 Project Info
+Name: Putri Amanda Sari
 Class: 4 TI A
-
 Course: Computer Vision
-
 Lecturer: Ananda, S.Kom., M.T., Ph.D.
-
-Teaching Assistant: Mhd. Anwar, S.Tr. Kom.
-
+Lab Assistant: Mhd. Anwar, S.Tr. Kom.
 Institution: Politeknik Caltex Riau
+Year: 2025
 
-Year: 2025**
+
+
+
+
+
 
