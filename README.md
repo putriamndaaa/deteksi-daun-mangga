@@ -41,30 +41,7 @@ Conventional disease diagnosis relies on expert observation, which is time-consu
 | Jinja2             | HTML templating                                 |
 | Google Colab       | Model development and training environment      |
 
----
----
-
-## 🧪 Workflow Overview
-
-1. **Dataset Collection**  
-   Dataset: [MangoLeafBD (Kaggle)](https://www.kaggle.com/datasets/warcoder/mango-leaf-disease-dataset)
-
-2. **Data Preprocessing**  
-   - Resize all images to 150x150 pixels  
-   - Apply data augmentation (rotation, flip, zoom)
-
-3. **Model Building**  
-   - CNN with Conv2D, MaxPooling, Flatten, Dense, Dropout, and Softmax
-
-4. **Model Training**  
-   - 10 training epochs  
-   - 80% training, 20% validation split
-
-5. **Model Saving & Prediction**  
-   - Save trained model to `.h5`  
-   - Load model for web-based predictions  
-   - Display results and suggested treatments to users
-
+--- 
 ---
 
 ## 💡 Disease Treatment Suggestions
